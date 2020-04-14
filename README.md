@@ -2,7 +2,7 @@
 
 ## Description
 
-This command line tool.
+This command line tool prompts the user to accomplish the following.  It should be enhanced to detect the details and edit the prefs for the user automatically.
 
 ```
 mkdir -p ~/.ssl ; cd ~/.ssl ; wget https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt ; openssl x509 -inform der -in DigiCertGlobalRootCA.crt -out ~/.ssl/DigiCertGlobalRootCA.pem ; cd ~
