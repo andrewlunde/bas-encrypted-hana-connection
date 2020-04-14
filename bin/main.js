@@ -3,9 +3,12 @@
 /*eslint-env node, es6, module */
 
 // console.log(argv);
-console.log("Run the following command.");
+console.log("Run the following commands.");
 
-console.log("mkdir -p ~/.ssl ; cd ~/.ssl ; wget https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt ; openssl x509 -inform der -in DigiCertGlobalRootCA.crt -out ~/.ssl/DigiCertGlobalRootCA.pem ; cd ~");
+console.log("mkdir -p ~/.ssl ; cd ~/.ssl");
+console.log("wget https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt");
+console.log("openssl x509 -inform der -in DigiCertGlobalRootCA.crt -out ~/.ssl/DigiCertGlobalRootCA.pem");
+console.log("cd ~");
 
 console.log("");
 
@@ -18,6 +21,8 @@ console.log("");
 console.log("vim ~/.theia/settings.json");
 console.log("");
 
+console.log("--or--");
+console.log("Go to File-Settings-Open Preferences.  Find the sqltools.connections element and replace it with this.");
 console.log('\n'+
 '"sqltools.connections": [\n'+
 '  {\n'+

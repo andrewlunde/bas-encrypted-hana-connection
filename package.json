@@ -1,6 +1,6 @@
 {
   "name": "bas-enc-hana-conn",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Create a new Encrypted HANA Connection inside SAP Business Application Studio",
   "main": "index.js",
   "bin": {
