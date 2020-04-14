@@ -1,0 +1,37 @@
+{
+  "name": "bas-enc-hana-conn",
+  "version": "0.0.5",
+  "description": "Create a new Encrypted HANA Connection inside SAP Business Application Studio",
+  "main": "index.js",
+  "bin": {
+    "enc-hana-conn": "./bin/main.js"
+  },
+  "engines": {
+    "node": ">=10.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewlunde/bas-encrypted-hana-connection.git"
+  },
+  "keywords": [
+    "hana",
+    "bas",
+    "sap",
+    "business application studio"
+  ],
+  "dependencies": {
+    "@sap/xsenv": "^2.2"
+  },
+  "author": "SAP",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/andrewlunde/bas-encrypted-hana-connection/issues"
+  },
+  "homepage": "https://github.com/andrewlunde/bas-encrypted-hana-connection/",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
