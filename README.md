@@ -8,25 +8,27 @@ This command line tool.
 mkdir -p ~/.ssl ; cd ~/.ssl ; wget https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt ; openssl x509 -inform der -in DigiCertGlobalRootCA.crt -out ~/.ssl/DigiCertGlobalRootCA.pem ; cd ~
 ```
 
+Go to File-Settings-Open Preferences.  Find the sqltools.connections element and replace it with this.
 ```
-        {
-                "dialect": "SAPHana",
-                "port": 20217,
-                "server": "zeus.hana.prod.us-east-1.whitney.dbaas.ondemand.com",
-                "name": "
-                ",
-                "database": "CONCILE_COM_V0_DEV",
-                "username": "CONCILE_COM_V0_DEV_BAIMZRXVZ29273G96X031ZXB3_RT",
-                "password": "Ks0X.o.ZzesOo4HaqGJDXG7bsiLxID4kDNQ9wBBGYhSEG.KmYzmKgZRxdyJHs2dR_lEFWvkmc1axRSQRthJyjib-5.5it09RqER86pxwo1espulTsFpd0qy14vf3pdUZ",
-                "hanaOptions": {
-                    "encrypt": true,
-                    "sslValidateCertificate": true,
-                    "sslCryptoProvider": "openssl",
-                    "sslTrustStore": "/home/user/.ssl/DigiCertGlobalRootCA.pem"
-                },
-                "isActive":&nbspfalse,
-                "isConnected":&nbspfalse
-        }
+"sqltools.connections": [
+  {
+     "dialect": "SAPHana",
+     "port": 20217,
+     "server": "zeus.hana.prod.us-east-1.whitney.dbaas.ondemand.com",
+     "name": "HANA_Encrypted",
+     "database": "BECT_DB",
+     "username": "BECT_DB_6USCB41HPEXXDTM6VYZ32LQS1_RT",
+     "password": "Zt5ZszJ32zMgeXu2wEY44bSFLG.Gm_6nM2HdaVIIlLGltpaOL9UCMGnl0bvmptg--V9CvocYuE2BHGVi9WcN34zbigLXegStkNsSDqYtmGeXlxMvBkJldUMo9RAHkv0P",
+     "hanaOptions": {
+         "encrypt": true,
+         "sslValidateCertificate": true,
+         "sslCryptoProvider": "openssl",
+         "sslTrustStore": "/home/user/.ssl/DigiCertGlobalRootCA.pem"
+      },
+      "isActive": false,
+      "isConnected": false
+  }
+]
 ```
 
 ## Requirements / Download and Installation
